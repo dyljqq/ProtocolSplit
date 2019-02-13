@@ -1,0 +1,3 @@
+# 如何将dataSource和Delegate从ViewController中分离
+
+主要的思想就是，新建一个Adaptor文件，将这两个协议的实现放到这个文件中去。具体代码Protocol Split

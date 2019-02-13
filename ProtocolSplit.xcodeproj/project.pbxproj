@@ -12,6 +12,7 @@
 		7359D1DE2213E22100BD5392 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7359D1DC2213E22100BD5392 /* Main.storyboard */; };
 		7359D1E02213E22300BD5392 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7359D1DF2213E22300BD5392 /* Assets.xcassets */; };
 		7359D1E32213E22300BD5392 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7359D1E12213E22300BD5392 /* LaunchScreen.storyboard */; };
+		7359D1EC2213E44400BD5392 /* ObjectDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7359D1EB2213E44400BD5392 /* ObjectDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		7359D1DF2213E22300BD5392 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7359D1E22213E22300BD5392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7359D1E42213E22300BD5392 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7359D1EB2213E44400BD5392 /* ObjectDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		7359D1D72213E22100BD5392 /* ProtocolSplit */ = {
 			isa = PBXGroup;
 			children = (
+				7359D1EA2213E42A00BD5392 /* Adaptor */,
 				7359D1D82213E22100BD5392 /* AppDelegate.swift */,
 				7359D1DA2213E22100BD5392 /* ViewController.swift */,
 				7359D1DC2213E22100BD5392 /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				7359D1E42213E22300BD5392 /* Info.plist */,
 			);
 			path = ProtocolSplit;
+			sourceTree = "<group>";
+		};
+		7359D1EA2213E42A00BD5392 /* Adaptor */ = {
+			isa = PBXGroup;
+			children = (
+				7359D1EB2213E44400BD5392 /* ObjectDataSource.swift */,
+			);
+			path = Adaptor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7359D1DB2213E22100BD5392 /* ViewController.swift in Sources */,
+				7359D1EC2213E44400BD5392 /* ObjectDataSource.swift in Sources */,
 				7359D1D92213E22100BD5392 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +304,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dyljqq.ProtocolSplit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +322,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dyljqq.ProtocolSplit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
